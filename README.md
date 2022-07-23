@@ -1,2 +1,2 @@
 # deezer-playlists
-A journal of Deezer's playlists to always have the history available. Updating Daily
+A journal of Deezer's playlists to always have the history available. Updating Daily. Inspired by [spotify-playlist-archive](https://github.com/mackorone/spotify-playlist-archive) and [git-scraping](https://simonwillison.net/2020/Oct/9/git-scraping/).

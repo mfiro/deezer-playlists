@@ -26,8 +26,39 @@ def save_as_json(id, tracks):
     print(f"Tracks' information saved to {save_path}")
 
 
-def save_as_pretty_table(id, tracks):
-    pass
+def get_pretty_content(playlist_title: str, tracks: dict) -> str:
+    #### Create page content
+    # Header (before table)
+    page_content = f"Playlist title : {playlist_title} \n\n"
+
+    # table content
+    column_names = ['No.', 'Song', 'Artist', 'Album', 'Time']
+
+    page_content += list2prettyrow(column_names)
+    page_content += list2prettyrow(['---']*len(column_names))
+
+    for idx, track in enumerate(tracks, 1):
+        page_content += list2prettyrow([idx,
+            track['title'],
+            track['artist']['name'],
+            track['album']['title'],
+            seconds2hms(track['duration'])],)
+    return page_content
+
+
+def save_as_pretty_table(playlist, tracks):
+
+    current_dir = os.path.dirname(__file__)
+    save_path = os.path.join(current_dir, f'../data/playlists_pretty/{playlist.id}.md')
+
+    # get page content
+    page_content = get_pretty_content(playlist.title, tracks)
+
+    # Write to the md file
+    with open(save_path, 'w') as f:
+        f.write(page_content)
+    
+    print(f"{save_path} updated")
 
 
 def main():
@@ -53,7 +84,7 @@ def main():
         save_as_json(id, tracks)
 
         # saving as a pretty table. ../data/playlists_pretty/id.md
-        save_as_pretty_table(id, tracks)       
+        save_as_pretty_table(playlist, tracks)       
 
 
 

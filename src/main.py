@@ -18,6 +18,18 @@ def get_tracks_dict(playlist):
     return playlist.as_dict()['tracks']
 
 
+def save_as_json(id, tracks):
+    print(f"Saving track list ...")
+    save_path = os.path.join(os.path.dirname(__file__), f'../data/playlists/{id}.json')
+    with open(save_path,'w') as f:
+        json.dump(tracks, f, indent=4)
+    print(f"Tracks' information saved to {save_path}")
+
+
+def save_as_pretty_table(id, tracks):
+    pass
+
+
 def main():
     # get the catalog:
     catalog = get_catalog()
@@ -37,12 +49,12 @@ def main():
         print(f"Getting tracks' information in raw json/dict format ...")
         tracks = get_tracks_dict(playlist)
 
-        # saving to json file
-        print(f"Saving track list ...")
-        save_path = os.path.join(os.path.dirname(__file__), f'../data/playlists/{id}.json')
-        with open(save_path,'w') as f:
-            json.dump(tracks, f, indent=4)
-        print(f"Tracks' information saved to {save_path}")
+        # saving to json file. Dest: ../data/playlists/id.json
+        save_as_json(id, tracks)
+
+        # saving as a pretty table. ../data/playlists_pretty/id.md
+        save_as_pretty_table(id, tracks)       
+
 
 
 def dummy_main():

@@ -55,17 +55,18 @@ def dummy_main():
     tracks = get_dummy_tracks(catalog)
 
     # pretty table
-    column_names = ['Song', 'Artist', 'Album', 'Time']
+    column_names = ['No.', 'Song', 'Artist', 'Album', 'Time']
 
     page_content = f"Playlist title:{'Top Germany 100'} \n\n"
 
-    table = list2prettyrow(column_names) + '\n'
-    table += list2prettyrow(['---']*len(column_names)) +'\n'
-    for track in tracks:
-        table += list2prettyrow([track['title'],
+    table = list2prettyrow(column_names)
+    table += list2prettyrow(['---']*len(column_names))
+    for idx, track in enumerate(tracks, 1):
+        table += list2prettyrow([idx,
+                                track['title'],
                                 track['artist']['name'],
                                 track['album']['title'],
-                                track['duration']]) + '\n'
+                                track['duration']],)
 
     template_path = os.path.join(os.path.dirname(__file__), f'../data/playlists_pretty/table_template.md')
     with open(template_path, 'w') as f:

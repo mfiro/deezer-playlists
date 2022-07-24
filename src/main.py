@@ -87,7 +87,6 @@ def main():
         save_as_pretty_table(playlist, tracks)       
 
 
-
 def dummy_main():
     """ In order to prevent real api calls"""
     
@@ -97,24 +96,13 @@ def dummy_main():
     # get some dummy data to start with
     tracks = get_dummy_tracks(catalog)
 
-    # pretty table
-    column_names = ['No.', 'Song', 'Artist', 'Album', 'Time']
-
-    page_content = f"Playlist title:{'Top Germany 100'} \n\n"
-
-    table = list2prettyrow(column_names)
-    table += list2prettyrow(['---']*len(column_names))
-    for idx, track in enumerate(tracks, 1):
-        table += list2prettyrow([idx,
-                                track['title'],
-                                track['artist']['name'],
-                                track['album']['title'],
-                                seconds2hms(track['duration'])],)
+    # get pretty content
+    page_content = get_pretty_content('Top Germany', tracks)
 
     template_path = os.path.join(os.path.dirname(__file__), f'../data/playlists_pretty/table_template.md')
+
     with open(template_path, 'w') as f:
         f.write(page_content)
-        f.write(table)
     
     print(f"{template_path} updated")
        

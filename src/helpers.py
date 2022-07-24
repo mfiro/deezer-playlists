@@ -21,3 +21,14 @@ def list2prettyrow(l):
     pretty = pretty.strip() # delete both leading and trailing spaces
     pretty += '\n'
     return pretty 
+
+def seconds2hms(s):
+    """Converts seconds to hh:mm:ss format
+    if the hh=00 the result will be mm:ss"""
+    
+    hours, remainder = divmod(s, 3600)
+    minutes, seconds = divmod(remainder, 60)
+    if hours==0:
+        return '{:02}:{:02}'.format(int(minutes), int(seconds))
+    else:
+        return '{:02}:{:02}:{:02}'.format(int(hours), int(minutes), int(seconds))

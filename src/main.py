@@ -2,7 +2,7 @@ import deezer
 import json
 import os
 
-from helpers import get_dummy_tracks, list2prettyrow
+from helpers import get_dummy_tracks, list2prettyrow, seconds2hms
 # TODO: Add pretty tables
 
 
@@ -66,7 +66,7 @@ def dummy_main():
                                 track['title'],
                                 track['artist']['name'],
                                 track['album']['title'],
-                                track['duration']],)
+                                seconds2hms(track['duration'])],)
 
     template_path = os.path.join(os.path.dirname(__file__), f'../data/playlists_pretty/table_template.md')
     with open(template_path, 'w') as f:

@@ -2,16 +2,16 @@ import json
 import os
 
 
-def get_dummy_tracks(catalog):
+def get_test_playlist(catalog):
     """ In order to prevent real api calls"""
 
     # load json from files
     id = catalog[0]
     playlist_path = os.path.join(os.path.dirname(__file__), f'../data/playlists/{id}.json')
     with open(playlist_path, 'r') as f:
-        tracks = json.load(f)
+        playlist = json.load(f)
     
-    return tracks
+    return playlist
 
 
 def list2prettyrow(l):

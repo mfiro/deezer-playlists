@@ -2,7 +2,7 @@ import deezer
 import json
 import os
 
-from helpers import get_dummy_tracks, list2prettyrow, seconds2hms, create_url_markdown
+from helpers import get_test_playlist, list2prettyrow, seconds2hms, create_url_markdown
 # TODO: Add pretty tables
 
 
@@ -79,11 +79,7 @@ def main():
         playlist.pop('share') 
         print(f"Playlist found! name: {playlist['title']}, {playlist['nb_tracks']} Tracks")
 
-        # get tracks' information, artist, titles ...
-        print(f"Getting tracks' information in raw json/dict format ...")
-        #tracks = playlist['tracks']
-
-        # saving to json file. Dest: ../data/playlists/id.json
+        # saving to playlist as json file. Dest: ../data/playlists/id.json
         save_as_json(playlist)
 
         # saving as a pretty table. ../data/playlists_pretty/id.md
@@ -97,10 +93,10 @@ def dummy_main():
     catalog = get_catalog()
 
     # get some dummy data to start with
-    tracks = get_dummy_tracks(catalog)
+    playlist = get_test_playlist(catalog)
 
     # get pretty content
-    page_content = get_pretty_content('Top Germany', tracks)
+    page_content = get_pretty_content(playlist)
 
     template_path = os.path.join(os.path.dirname(__file__), f'../data/playlists_pretty/table_template.md')
 
@@ -111,7 +107,7 @@ def dummy_main():
        
 
 if __name__ == "__main__":
-    dummy_mode = False
+    dummy_mode = True
 
     if dummy_mode:
         dummy_main()

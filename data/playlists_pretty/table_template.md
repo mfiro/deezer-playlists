@@ -1,5 +1,5 @@
 ## Playlist Information 
-<table><tr><th>Fruit</th><td>Banana</td></tr><tr><th>Fruit</th><td>Banana</td></tr></table>
+<table><tr><th>Title</th><td>Top Germany</td></tr><tr><th>Description</th><td></td></tr><tr><th>No. Tracks</th><td>100</td></tr><tr><th>No. Fans</th><td>2715671</td></tr><tr><th>Link</th><td>https://www.deezer.com/playlist/1111143121</td></tr></table>
 
 ## Tracklist 
 | No. | Song | Artist | Album | Time |

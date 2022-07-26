@@ -1,6 +1,6 @@
 ## Playlist Information 
-Playlist title : Top Germany 
-
+| --- | --- |
+| Playlist title | Top Germany |
 ## Tracklist 
 | No. | Song | Artist | Album | Time |
 | --- | --- | --- | --- | --- |

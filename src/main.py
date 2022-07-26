@@ -2,7 +2,7 @@ import deezer
 import json
 import os
 
-from helpers import get_dummy_tracks, list2prettyrow, seconds2hms
+from helpers import get_dummy_tracks, list2prettyrow, seconds2hms, create_url_markdown
 # TODO: Add pretty tables
 
 
@@ -14,22 +14,18 @@ def get_catalog():
     return catalog
 
 
-def get_tracks_dict(playlist):
-    return playlist.as_dict()['tracks']
-
-
-def save_as_json(id, tracks):
+def save_as_json(playlist):
     print(f"Saving track list ...")
-    save_path = os.path.join(os.path.dirname(__file__), f'../data/playlists/{id}.json')
+    save_path = os.path.join(os.path.dirname(__file__), f"../data/playlists/{playlist['id']}.json")
     with open(save_path,'w') as f:
-        json.dump(tracks, f, indent=4)
+        json.dump(playlist, f, indent=4)
     print(f"Tracks' information saved to {save_path}")
 
 
-def get_pretty_content(playlist_title: str, tracks: dict) -> str:
+def get_pretty_content(playlist: dict) -> str:
     #### Create page content
     # Header (before table)
-    page_content = f"Playlist title : {playlist_title} \n\n"
+    page_content = f"Playlist title : {playlist['title']} \n\n"
 
     # table content
     column_names = ['No.', 'Song', 'Artist', 'Album', 'Time']
@@ -37,25 +33,25 @@ def get_pretty_content(playlist_title: str, tracks: dict) -> str:
     page_content += list2prettyrow(column_names)
     page_content += list2prettyrow(['---']*len(column_names))
 
-    for idx, track in enumerate(tracks, 1):
+    for idx, track in enumerate(playlist['tracks'], 1):
         page_content += list2prettyrow(
             [
             idx,
-            track['title'],
-            track['artist']['name'],
+            create_url_markdown(track['link'], track['title']),
+            create_url_markdown(track['artist']['link'], track['artist']['name']),
             track['album']['title'],
             seconds2hms(track['duration'])
             ],)
     return page_content
 
 
-def save_as_pretty_table(playlist, tracks):
+def save_as_pretty_table(playlist):
 
     current_dir = os.path.dirname(__file__)
-    save_path = os.path.join(current_dir, f'../data/playlists_pretty/{playlist.id}.md')
+    save_path = os.path.join(current_dir, f"../data/playlists_pretty/{playlist['id']}.md")
 
     # get page content
-    page_content = get_pretty_content(playlist.title, tracks)
+    page_content = get_pretty_content(playlist)
 
     # Write to the md file
     with open(save_path, 'w') as f:
@@ -77,17 +73,21 @@ def main():
         # get playlist
         print(f"Getting the playlist {id} ...")
         playlist = client.get_playlist(id)
-        print(f"Playlist found! name: {playlist.title}, {playlist.nb_tracks} Tracks")
+        playlist = playlist.as_dict()
+
+        # remove the share key from dict. It changes constantly and causes not useful diff 
+        playlist.pop('share') 
+        print(f"Playlist found! name: {playlist['title']}, {playlist['nb_tracks']} Tracks")
 
         # get tracks' information, artist, titles ...
         print(f"Getting tracks' information in raw json/dict format ...")
-        tracks = get_tracks_dict(playlist)
+        #tracks = playlist['tracks']
 
         # saving to json file. Dest: ../data/playlists/id.json
-        save_as_json(id, tracks)
+        save_as_json(playlist)
 
         # saving as a pretty table. ../data/playlists_pretty/id.md
-        save_as_pretty_table(playlist, tracks)       
+        save_as_pretty_table(playlist)       
 
 
 def dummy_main():
@@ -111,7 +111,7 @@ def dummy_main():
        
 
 if __name__ == "__main__":
-    dummy_mode = True
+    dummy_mode = False
 
     if dummy_mode:
         dummy_main()

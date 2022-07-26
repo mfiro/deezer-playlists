@@ -32,3 +32,8 @@ def seconds2hms(s):
         return '{:02}:{:02}'.format(int(minutes), int(seconds))
     else:
         return '{:02}:{:02}:{:02}'.format(int(hours), int(minutes), int(seconds))
+
+
+def create_url_markdown(url, link_text):
+    """creates a url in markdown style for github"""
+    return f'[{link_text}]({url})'

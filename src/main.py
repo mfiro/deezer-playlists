@@ -38,11 +38,14 @@ def get_pretty_content(playlist_title: str, tracks: dict) -> str:
     page_content += list2prettyrow(['---']*len(column_names))
 
     for idx, track in enumerate(tracks, 1):
-        page_content += list2prettyrow([idx,
+        page_content += list2prettyrow(
+            [
+            idx,
             track['title'],
             track['artist']['name'],
             track['album']['title'],
-            seconds2hms(track['duration'])],)
+            seconds2hms(track['duration'])
+            ],)
     return page_content
 
 

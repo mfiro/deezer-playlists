@@ -3,7 +3,7 @@
 
 | x | y |
 | --- | --- |
-| Playlist title | Top Germany |
+| ** Playlist title ** | Top Germany |
 
 
 ## Tracklist 

@@ -1,13 +1,5 @@
-<table>
-        <tr>
-            <th>Fruit</th>
-            <td>Banana</td>
-        </tr>
-        <tr>
-            <th>Vegetable</th>
-            <td>Carrot</td>
-        </tr>
-    </table>
+## Playlist Information 
+<table><tr><th>Fruit</th><td>Banana</td></tr><tr><th>Vegetable</th><td>Carrot</td></tr></table>
 
 ## Tracklist 
 | No. | Song | Artist | Album | Time |

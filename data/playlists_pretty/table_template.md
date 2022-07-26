@@ -1,10 +1,13 @@
-## Playlist Information 
-
-
-| x | y |
-| --- | --- |
-| ** Playlist title ** | Top Germany |
-
+<table>
+        <tr>
+            <th>Fruit</th>
+            <td>Banana</td>
+        </tr>
+        <tr>
+            <th>Vegetable</th>
+            <td>Carrot</td>
+        </tr>
+    </table>
 
 ## Tracklist 
 | No. | Song | Artist | Album | Time |

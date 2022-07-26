@@ -24,10 +24,22 @@ def save_as_json(playlist):
 
 def get_pretty_content(playlist: dict) -> str:
     #### Create page content
-    # Header (before table)
-    page_content = f"Playlist title : {playlist['title']} \n\n"
+    ## ---------- Playlist information ------------
+    page_content = "## Playlist Information \n"
 
-    # table content
+    # create a vertical table
+    page_content += "<table>" # beginning of table html
+    page_content += f"<tr><th align ='left'>Title</th><td align ='left'>{playlist['title']}</td></tr>"
+    page_content += f"<tr><th align ='left'>Description</th><td align ='left'>{playlist['description']}</td></tr>"
+    page_content += f"<tr><th align ='left'>No. Tracks</th><td align ='left'>{playlist['nb_tracks']}</td></tr>"
+    page_content += f"<tr><th align ='left'>No. Fans</th><td align ='left'>{playlist['fans']}</td></tr>"
+    page_content += f"<tr><th align ='left'>Link</th><td align ='left'>{playlist['link']}</td></tr>"
+    page_content += "</table>" # end of html table
+    page_content += "\n\n"
+    #page_content += f"Playlist title : {playlist['title']} \n\n"
+
+    # ----------- Tracklist -----------------------
+    page_content += "## Tracklist \n"
     column_names = ['No.', 'Song', 'Artist', 'Album', 'Time']
 
     page_content += list2prettyrow(column_names)

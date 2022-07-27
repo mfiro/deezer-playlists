@@ -1,5 +1,4 @@
 import deezer
-import json
 import os
 
 from helpers import get_test_playlist

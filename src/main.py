@@ -2,8 +2,8 @@ import deezer
 import json
 import os
 
-from helpers import get_test_playlist, list2prettyrow, seconds2hms, create_url_markdown
-
+from helpers import get_test_playlist
+from pretty_playlist import make_pretty_md
 
 def get_catalog():
     """ get the catalog (list of playlists to get) """
@@ -21,49 +21,13 @@ def save_as_json(playlist):
     print(f"Tracks' information saved to {save_path}")
 
 
-def get_pretty_content(playlist: dict) -> str:
-    #### Create page content
-    ## ---------- Playlist information ------------
-    page_content = "## Playlist Information \n"
-
-    # create a vertical table
-    page_content += "<table>" # beginning of table html
-    page_content += f"<tr><th align ='left'>Title</th><td align ='left'>{playlist['title']}</td></tr>"
-    page_content += f"<tr><th align ='left'>Description</th><td align ='left'>{playlist['description']}</td></tr>"
-    page_content += f"<tr><th align ='left'>No. Tracks</th><td align ='left'>{playlist['nb_tracks']}</td></tr>"
-    page_content += f"<tr><th align ='left'>Duration</th><td align ='left'>{seconds2hms(playlist['duration'])}</td></tr>"
-    page_content += f"<tr><th align ='left'>No. Fans</th><td align ='left'>{playlist['fans']}</td></tr>"
-    page_content += f"<tr><th align ='left'>Link</th><td align ='left'>{playlist['link']}</td></tr>"
-    page_content += "</table>" # end of html table
-    page_content += "\n\n"
-    #page_content += f"Playlist title : {playlist['title']} \n\n"
-
-    # ----------- Tracklist -----------------------
-    page_content += "## Tracklist \n"
-    column_names = ['No.', 'Song', 'Artist', 'Album', 'Time']
-
-    page_content += list2prettyrow(column_names)
-    page_content += list2prettyrow(['---']*len(column_names))
-
-    for idx, track in enumerate(playlist['tracks'], 1):
-        page_content += list2prettyrow(
-            [
-            idx,
-            create_url_markdown(track['link'], track['title']),
-            create_url_markdown(track['artist']['link'], track['artist']['name']),
-            track['album']['title'],
-            seconds2hms(track['duration'])
-            ],)
-    return page_content
-
-
 def save_as_pretty_table(playlist):
 
     current_dir = os.path.dirname(__file__)
     save_path = os.path.join(current_dir, f"../data/playlists_pretty/{playlist['id']}.md")
 
     # get page content
-    page_content = get_pretty_content(playlist)
+    page_content = make_pretty_md(playlist)
 
     # Write to the md file
     with open(save_path, 'w') as f:
@@ -108,7 +72,7 @@ def dummy_main():
     playlist = get_test_playlist(catalog)
 
     # get pretty content
-    page_content = get_pretty_content(playlist)
+    page_content = make_pretty_md(playlist)
 
     template_path = os.path.join(os.path.dirname(__file__), f'../data/playlists_pretty/table_template.md')
 
@@ -119,7 +83,7 @@ def dummy_main():
        
 
 if __name__ == "__main__":
-    dummy_mode = True
+    dummy_mode = False
 
     if dummy_mode:
         dummy_main()

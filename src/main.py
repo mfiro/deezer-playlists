@@ -9,7 +9,8 @@ from archive import get_catalog, save_as_json, save_as_pretty_table
 
 def main():
     # get the catalog:
-    catalog = get_catalog()
+    catalog_path = os.path.join(os.path.dirname(__file__), '../data/catalog/catalog.txt')
+    catalog = get_catalog(catalog_path)
 
     # initated the deezer client
     client = deezer.Client()
@@ -27,17 +28,21 @@ def main():
         print(f"Playlist found! name: {playlist['title']}, {playlist['nb_tracks']} Tracks")
 
         # saving to playlist as json file. Dest: ../data/playlists/id.json
-        save_as_json(playlist)
+        save_path = os.path.join(os.path.dirname(__file__), f"../data/playlists/{playlist['id']}.json")
+        save_as_json(playlist, save_path)
 
         # saving as a pretty table. ../data/playlists_pretty/id.md
-        save_as_pretty_table(playlist)       
+        current_dir = os.path.dirname(__file__)
+        save_path = os.path.join(current_dir, f"../data/playlists_pretty/{playlist['id']}.md")
+        save_as_pretty_table(playlist, save_path)       
 
 
 def dummy_main():
     """ In order to prevent real api calls"""
     
     # get the catalog:
-    catalog = get_catalog()
+    catalog_path = os.path.join(os.path.dirname(__file__), '../data/catalog/catalog.txt')
+    catalog = get_catalog(catalog_path)
 
     # get some dummy data to start with
     playlist = get_test_playlist(catalog)

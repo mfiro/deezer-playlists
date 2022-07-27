@@ -3,7 +3,6 @@ import json
 import os
 
 from helpers import get_test_playlist, list2prettyrow, seconds2hms, create_url_markdown
-# TODO: Add pretty tables
 
 
 def get_catalog():
@@ -32,6 +31,7 @@ def get_pretty_content(playlist: dict) -> str:
     page_content += f"<tr><th align ='left'>Title</th><td align ='left'>{playlist['title']}</td></tr>"
     page_content += f"<tr><th align ='left'>Description</th><td align ='left'>{playlist['description']}</td></tr>"
     page_content += f"<tr><th align ='left'>No. Tracks</th><td align ='left'>{playlist['nb_tracks']}</td></tr>"
+    page_content += f"<tr><th align ='left'>Duration</th><td align ='left'>{seconds2hms(playlist['duration'])}</td></tr>"
     page_content += f"<tr><th align ='left'>No. Fans</th><td align ='left'>{playlist['fans']}</td></tr>"
     page_content += f"<tr><th align ='left'>Link</th><td align ='left'>{playlist['link']}</td></tr>"
     page_content += "</table>" # end of html table

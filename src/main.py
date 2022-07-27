@@ -46,15 +46,9 @@ def dummy_main():
     # get some dummy data to start with
     playlist = get_test_playlist(catalog)
 
-    # get pretty content
-    page_content = make_pretty_md(playlist)
-
+    # save the template
     template_path = os.path.join(os.path.dirname(__file__), f'../data/playlists_pretty/table_template.md')
-
-    with open(template_path, 'w') as f:
-        f.write(page_content)
-    
-    print(f"{template_path} updated")
+    save_as_pretty_table(playlist, template_path)  
        
 
 if __name__ == "__main__":

@@ -14,14 +14,6 @@ def get_test_playlist(catalog):
     return playlist
 
 
-def list2prettyrow(l):
-    # convert everything to str
-    l = [str(i) for i in l]
-    pretty = ' | '.join(['', *l,''])
-    pretty = pretty.strip() # delete both leading and trailing spaces
-    pretty += '\n'
-    return pretty 
-
 def seconds2hms(s):
     """Converts seconds to hh:mm:ss format
     if the hh=00 the result will be mm:ss"""

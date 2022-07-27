@@ -1,4 +1,14 @@
-from helpers import list2prettyrow, seconds2hms, create_url_markdown
+from helpers import seconds2hms, create_url_markdown
+
+
+def list2prettyrow(l):
+    # convert everything to str
+    l = [str(i) for i in l]
+    pretty = ' | '.join(['', *l,''])
+    pretty = pretty.strip() # delete both leading and trailing spaces
+    pretty += '\n'
+    return pretty 
+
 
 def make_pretty_md(playlist: dict) -> str:
     #### Create page content
@@ -34,3 +44,4 @@ def make_pretty_md(playlist: dict) -> str:
             seconds2hms(track['duration'])
             ],)
     return page_content
+    

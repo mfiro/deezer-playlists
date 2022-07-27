@@ -2,7 +2,6 @@ import deezer
 import os
 
 from helpers import get_test_playlist
-from pretty_playlist import make_pretty_md
 from archive import get_catalog, save_as_json, save_as_pretty_table
 
 

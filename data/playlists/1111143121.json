@@ -7,7 +7,7 @@
     "is_loved_track": false,
     "collaborative": false,
     "nb_tracks": 100,
-    "fans": 2715701,
+    "fans": 2715704,
     "link": "https://www.deezer.com/playlist/1111143121",
     "picture": "https://api.deezer.com/playlist/1111143121/image",
     "picture_small": "https://e-cdns-images.dzcdn.net/images/playlist/fbd9767ddb69cf4c43889f8e141f19b2/56x56-000000-80-0-0.jpg",
@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/fbd9767ddb69cf4c43889f8e141f19b2/1000x1000-000000-80-0-0.jpg",
     "checksum": "a7c85c6018f902d467220ac4b2ae46a0",
     "tracklist": "https://api.deezer.com/playlist/1111143121/tracks",
-    "creation_date": "2015-01-09 18:40:44",
+    "creation_date": "2015-01-09 12:40:44",
     "md5_image": "fbd9767ddb69cf4c43889f8e141f19b2",
     "picture_type": "playlist",
     "creator": {
@@ -101,7 +101,7 @@
         },
         {
             "id": 1730583477,
-            "readable": true,
+            "readable": false,
             "title": "Beautiful Girl",
             "title_short": "Beautiful Girl",
             "title_version": "",
@@ -728,7 +728,7 @@
             "time_add": 1650693129,
             "artist": {
                 "id": 1095256,
-                "name": "T-low",
+                "name": "T-Low",
                 "link": "https://www.deezer.com/artist/1095256",
                 "tracklist": "https://api.deezer.com/artist/1095256/top?limit=50",
                 "type": "artist"
@@ -1016,7 +1016,7 @@
             "time_add": 1635837736,
             "artist": {
                 "id": 12869727,
-                "name": "Acraze",
+                "name": "ACRAZE",
                 "link": "https://www.deezer.com/artist/12869727",
                 "tracklist": "https://api.deezer.com/artist/12869727/top?limit=50",
                 "type": "artist"
@@ -1181,7 +1181,7 @@
         },
         {
             "id": 1582442572,
-            "readable": true,
+            "readable": false,
             "title": "Remedy",
             "title_short": "Remedy",
             "title_version": "",
@@ -1433,7 +1433,7 @@
         },
         {
             "id": 1595157041,
-            "readable": true,
+            "readable": false,
             "title": "In The Dark",
             "title_short": "In The Dark",
             "title_version": "",
@@ -1484,7 +1484,7 @@
             "time_add": 1650260769,
             "artist": {
                 "id": 402,
-                "name": "Panic! At the Disco",
+                "name": "Panic! At The Disco",
                 "link": "https://www.deezer.com/artist/402",
                 "tracklist": "https://api.deezer.com/artist/402/top?limit=50",
                 "type": "artist"
@@ -1772,7 +1772,7 @@
             "time_add": 1643528289,
             "artist": {
                 "id": 10742336,
-                "name": "Elley Duhe",
+                "name": "Elley Duh\u00e9",
                 "link": "https://www.deezer.com/artist/10742336",
                 "tracklist": "https://api.deezer.com/artist/10742336/top?limit=50",
                 "type": "artist"
@@ -1952,7 +1952,7 @@
             "time_add": 1658554208,
             "artist": {
                 "id": 289038,
-                "name": "Mero",
+                "name": "MERO",
                 "link": "https://www.deezer.com/artist/289038",
                 "tracklist": "https://api.deezer.com/artist/289038/top?limit=50",
                 "type": "artist"
@@ -1988,7 +1988,7 @@
             "time_add": 1640504530,
             "artist": {
                 "id": 51204222,
-                "name": "The Kid Laroi",
+                "name": "The Kid LAROI",
                 "link": "https://www.deezer.com/artist/51204222",
                 "tracklist": "https://api.deezer.com/artist/51204222/top?limit=50",
                 "type": "artist"
@@ -3464,7 +3464,7 @@
             "time_add": 1658897769,
             "artist": {
                 "id": 1095256,
-                "name": "T-low",
+                "name": "T-Low",
                 "link": "https://www.deezer.com/artist/1095256",
                 "tracklist": "https://api.deezer.com/artist/1095256/top?limit=50",
                 "type": "artist"

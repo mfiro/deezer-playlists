@@ -1,13 +1,13 @@
 {
     "id": 878989033,
     "title": "90s Hits",
-    "description": "Die unvergessliche \u00c4ra der Hits aus den 90er Jahren.",
+    "description": "The unforgettable era of hits from the 90s.",
     "duration": 12586,
     "public": true,
     "is_loved_track": false,
     "collaborative": false,
     "nb_tracks": 50,
-    "fans": 203833,
+    "fans": 203838,
     "link": "https://www.deezer.com/playlist/878989033",
     "picture": "https://api.deezer.com/playlist/878989033/image",
     "picture_small": "https://e-cdns-images.dzcdn.net/images/playlist/3ae533f7c2f02a196b6b7e4153ce750c/56x56-000000-80-0-0.jpg",
@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/3ae533f7c2f02a196b6b7e4153ce750c/1000x1000-000000-80-0-0.jpg",
     "checksum": "dbb153db5ff73e79e71554ab64ed0428",
     "tracklist": "https://api.deezer.com/playlist/878989033/tracks",
-    "creation_date": "2014-05-26 14:53:21",
+    "creation_date": "2014-05-26 08:53:21",
     "md5_image": "3ae533f7c2f02a196b6b7e4153ce750c",
     "picture_type": "playlist",
     "creator": {
@@ -101,7 +101,7 @@
         },
         {
             "id": 398570642,
-            "readable": false,
+            "readable": true,
             "title": "Bitter Sweet Symphony",
             "title_short": "Bitter Sweet Symphony",
             "title_version": "",
@@ -209,7 +209,7 @@
         },
         {
             "id": 13791930,
-            "readable": true,
+            "readable": false,
             "title": "Smells Like Teen Spirit",
             "title_short": "Smells Like Teen Spirit",
             "title_version": "",
@@ -317,7 +317,7 @@
         },
         {
             "id": 1038048,
-            "readable": true,
+            "readable": false,
             "title": "Gettin' Jiggy Wit It",
             "title_short": "Gettin' Jiggy Wit It",
             "title_version": "",
@@ -641,7 +641,7 @@
         },
         {
             "id": 15586242,
-            "readable": false,
+            "readable": true,
             "title": "Doo Wop (That Thing)",
             "title_short": "Doo Wop (That Thing)",
             "title_version": "",
@@ -656,7 +656,7 @@
             "time_add": 1620156960,
             "artist": {
                 "id": 1117,
-                "name": "Ms. Lauryn Hill",
+                "name": "Lauryn Hill",
                 "link": "https://www.deezer.com/artist/1117",
                 "tracklist": "https://api.deezer.com/artist/1117/top?limit=50",
                 "type": "artist"
@@ -965,10 +965,10 @@
         },
         {
             "id": 129225916,
-            "readable": true,
-            "title": "My Heart Will Go On (Love Theme from \"Titanic\")",
+            "readable": false,
+            "title": "My Heart Will Go On",
             "title_short": "My Heart Will Go On",
-            "title_version": "(Love Theme from \"Titanic\")",
+            "title_version": "",
             "link": "https://www.deezer.com/track/129225916",
             "duration": 280,
             "rank": 548884,
@@ -1109,7 +1109,7 @@
         },
         {
             "id": 1115044,
-            "readable": true,
+            "readable": false,
             "title": "Barbie Girl",
             "title_short": "Barbie Girl",
             "title_version": "",
@@ -1325,7 +1325,7 @@
         },
         {
             "id": 624823,
-            "readable": true,
+            "readable": false,
             "title": "I Don't Want To Miss A Thing",
             "title_short": "I Don't Want To Miss A Thing",
             "title_version": "",
@@ -1361,7 +1361,7 @@
         },
         {
             "id": 910474,
-            "readable": true,
+            "readable": false,
             "title": "Lovefool",
             "title_short": "Lovefool",
             "title_version": "",
@@ -1614,9 +1614,9 @@
         {
             "id": 565655,
             "readable": false,
-            "title": "Virtual Insanity (Remastered)",
+            "title": "Virtual Insanity",
             "title_short": "Virtual Insanity",
-            "title_version": "(Remastered)",
+            "title_version": "",
             "link": "https://www.deezer.com/track/565655",
             "duration": 229,
             "rank": 83938,
@@ -1649,7 +1649,7 @@
         },
         {
             "id": 2252935,
-            "readable": true,
+            "readable": false,
             "title": "Save Tonight",
             "title_short": "Save Tonight",
             "title_version": "",
@@ -1722,9 +1722,9 @@
         {
             "id": 10392088,
             "readable": true,
-            "title": "Freedom! '90 (Remastered)",
+            "title": "Freedom! '90",
             "title_short": "Freedom! '90",
-            "title_version": "(Remastered)",
+            "title_version": "",
             "link": "https://www.deezer.com/track/10392088",
             "duration": 388,
             "rank": 763851,

@@ -6,7 +6,7 @@ name: Playlist-Archiver
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   schedule:
-    - cron: "*/5 * * * *" #runs at 00:00 UTC everyday
+    - cron: "43 1 * * *" #runs at 00:00 UTC everyday
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:

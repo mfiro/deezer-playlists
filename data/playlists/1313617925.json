@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/376d3824fc273f765f63678ee962444a/1000x1000-000000-80-0-0.jpg",
     "checksum": "a47cd74e955f8fff5fd05eef5eda4ce2",
     "tracklist": "https://api.deezer.com/playlist/1313617925/tracks",
-    "creation_date": "2015-07-23 12:48:13",
+    "creation_date": "2015-07-23 05:48:13",
     "md5_image": "376d3824fc273f765f63678ee962444a",
     "picture_type": "playlist",
     "creator": {
@@ -755,7 +755,7 @@
             "title_version": "",
             "link": "https://www.deezer.com/track/95817490",
             "duration": 178,
-            "rank": 528418,
+            "rank": 512143,
             "explicit_lyrics": false,
             "explicit_content_lyrics": 0,
             "explicit_content_cover": 2,
@@ -1001,7 +1001,7 @@
         },
         {
             "id": 1549325122,
-            "readable": true,
+            "readable": false,
             "title": "LA FAMA",
             "title_short": "LA FAMA",
             "title_version": "",
@@ -1016,7 +1016,7 @@
             "time_add": 1646979967,
             "artist": {
                 "id": 554792,
-                "name": "Rosal\u00eda",
+                "name": "ROSAL\u00cdA",
                 "link": "https://www.deezer.com/artist/554792",
                 "tracklist": "https://api.deezer.com/artist/554792/top?limit=50",
                 "type": "artist"
@@ -1160,7 +1160,7 @@
             "time_add": 1647757566,
             "artist": {
                 "id": 10742336,
-                "name": "Elley Duhe",
+                "name": "Elley Duh\u00e9",
                 "link": "https://www.deezer.com/artist/10742336",
                 "tracklist": "https://api.deezer.com/artist/10742336/top?limit=50",
                 "type": "artist"
@@ -1484,7 +1484,7 @@
             "time_add": 1640109007,
             "artist": {
                 "id": 51204222,
-                "name": "The Kid Laroi",
+                "name": "The Kid LAROI",
                 "link": "https://www.deezer.com/artist/51204222",
                 "tracklist": "https://api.deezer.com/artist/51204222/top?limit=50",
                 "type": "artist"
@@ -2009,7 +2009,7 @@
         },
         {
             "id": 1650046032,
-            "readable": true,
+            "readable": false,
             "title": "Trompeta",
             "title_short": "Trompeta",
             "title_version": "",
@@ -2117,7 +2117,7 @@
         },
         {
             "id": 67354825,
-            "readable": true,
+            "readable": false,
             "title": "Riptide",
             "title_short": "Riptide",
             "title_version": "",
@@ -2153,7 +2153,7 @@
         },
         {
             "id": 132629158,
-            "readable": true,
+            "readable": false,
             "title": "Prendre Racine",
             "title_short": "Prendre Racine",
             "title_version": "",
@@ -2225,7 +2225,7 @@
         },
         {
             "id": 63510361,
-            "readable": true,
+            "readable": false,
             "title": "Demons",
             "title_short": "Demons",
             "title_version": "",
@@ -2420,7 +2420,7 @@
             "time_add": 1657687208,
             "artist": {
                 "id": 12869727,
-                "name": "Acraze",
+                "name": "ACRAZE",
                 "link": "https://www.deezer.com/artist/12869727",
                 "tracklist": "https://api.deezer.com/artist/12869727/top?limit=50",
                 "type": "artist"
@@ -2477,7 +2477,7 @@
         },
         {
             "id": 113876568,
-            "readable": true,
+            "readable": false,
             "title": "Lean On (feat. M\u00d8 & DJ Snake)",
             "title_short": "Lean On (feat. M\u00d8 & DJ Snake)",
             "title_version": "",
@@ -2672,7 +2672,7 @@
             "time_add": 1658897767,
             "artist": {
                 "id": 402,
-                "name": "Panic! At the Disco",
+                "name": "Panic! At The Disco",
                 "link": "https://www.deezer.com/artist/402",
                 "tracklist": "https://api.deezer.com/artist/402/top?limit=50",
                 "type": "artist"
@@ -2801,7 +2801,7 @@
         },
         {
             "id": 1645426722,
-            "readable": true,
+            "readable": false,
             "title": "Stolen Dance",
             "title_short": "Stolen Dance",
             "title_version": "",
@@ -3089,7 +3089,7 @@
         },
         {
             "id": 1595157041,
-            "readable": true,
+            "readable": false,
             "title": "In The Dark",
             "title_short": "In The Dark",
             "title_version": "",
@@ -3233,7 +3233,7 @@
         },
         {
             "id": 1730583477,
-            "readable": true,
+            "readable": false,
             "title": "Beautiful Girl",
             "title_short": "Beautiful Girl",
             "title_version": "",
@@ -3376,7 +3376,7 @@
         },
         {
             "id": 798382542,
-            "readable": true,
+            "readable": false,
             "title": "Baian\u00e1",
             "title_short": "Baian\u00e1",
             "title_version": "",

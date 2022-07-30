@@ -6,8 +6,10 @@ from archive import get_catalog, save_as_json, save_as_pretty_table
 
 
 def main():
+    current_dir = os.path.dirname(__file__)
+
     # get the catalog:
-    catalog_path = os.path.join(os.path.dirname(__file__), '../data/catalog/catalog.txt')
+    catalog_path = os.path.join(current_dir, '../data/catalog/catalog.txt')
     catalog = get_catalog(catalog_path)
 
     # initiate the deezer client
@@ -17,8 +19,6 @@ def main():
     for id in catalog:
         
         ## Destination paths:
-        current_dir = os.path.dirname(__file__)
-
         # json files location: ../data/playlists/id.json
         json_path = os.path.join(current_dir, f"../data/playlists/{id}.json")
 

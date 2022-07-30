@@ -37,7 +37,7 @@ jobs:
           
       # Run main.py
       - name: Run main.py
-        run: python -m src.main
+        run: python -m deezerpl.main
           
       - name: Commit and push if it changed 
         run: |

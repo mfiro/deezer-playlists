@@ -10,13 +10,22 @@ def main():
     catalog_path = os.path.join(os.path.dirname(__file__), '../data/catalog/catalog.txt')
     catalog = get_catalog(catalog_path)
 
-    # initated the deezer client
+    # initiate the deezer client
     client = deezer.Client()
 
-    # get playlist tracks and artists:
+    # get playlist info:
     for id in catalog:
+        
+        ## Destination paths:
+        current_dir = os.path.dirname(__file__)
 
-        # get playlist
+        # json files location: ../data/playlists/id.json
+        json_path = os.path.join(current_dir, f"../data/playlists/{id}.json")
+
+        # pretty md pages location: ../data/playlists_pretty/id.md 
+        pretty_path = os.path.join(current_dir, f"../data/playlists_pretty/{id}.md")
+
+        ## Get playlist
         print(f"Getting the playlist {id} ...")
         playlist = client.get_playlist(id)
         playlist = playlist.as_dict()
@@ -25,14 +34,9 @@ def main():
         playlist.pop('share') 
         print(f"Playlist found! name: {playlist['title']}, {playlist['nb_tracks']} Tracks")
 
-        # saving to playlist as json file. Dest: ../data/playlists/id.json
-        save_path = os.path.join(os.path.dirname(__file__), f"../data/playlists/{playlist['id']}.json")
-        save_as_json(playlist, save_path)
-
-        # saving as a pretty table. ../data/playlists_pretty/id.md
-        current_dir = os.path.dirname(__file__)
-        save_path = os.path.join(current_dir, f"../data/playlists_pretty/{playlist['id']}.md")
-        save_as_pretty_table(playlist, save_path)       
+        ## Saving to destination
+        save_as_json(playlist, json_path)
+        save_as_pretty_table(playlist, pretty_path)       
 
 
 def dummy_main():

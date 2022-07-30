@@ -1,6 +1,6 @@
 import os
 import json
-from src.pretty_playlist import make_pretty_md
+from deezerpl.pretty_playlist import make_pretty_md
 
 
 def read_catalog(catalog_path):

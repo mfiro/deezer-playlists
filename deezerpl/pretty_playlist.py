@@ -1,4 +1,4 @@
-from src.helpers import seconds2hms, create_url_markdown
+from deezerpl.helpers import seconds2hms, create_url_markdown
 
 
 def list2prettyrow(l):

@@ -1,8 +1,8 @@
 import deezer
 import os
 
-from src.helpers import get_test_playlist
-from src.archive import read_catalog, save_as_json, save_as_pretty_table
+from deezerpl.helpers import get_test_playlist
+from deezerpl.archive import read_catalog, save_as_json, save_as_pretty_table
 
 # TODO: rename get_catalog to read_catalog
 

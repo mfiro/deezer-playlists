@@ -1,10 +1,9 @@
-import deezer
 import os
+import deezer
 
-from deezerpl.helpers import get_test_playlist
 from deezerpl.archive import read_catalog, save_as_json, save_as_pretty_table
+from deezerpl.helpers import get_test_playlist
 
-# TODO: rename get_catalog to read_catalog
 
 def main():
     data_dir = './data'
@@ -17,32 +16,32 @@ def main():
     client = deezer.Client()
 
     # get playlist info:
-    for id in playlist_ids:
-        
-        ## Destination paths:
+    for playlist_id in playlist_ids:
+
+        # Destination paths:
         # json files location: ../data/playlists/id.json
-        json_path = os.path.join(data_dir, f"playlists/{id}.json")
+        json_path = os.path.join(data_dir, f"playlists/{playlist_id}.json")
 
-        # pretty md pages location: ../data/playlists_pretty/id.md 
-        pretty_path = os.path.join(data_dir, f"playlists_pretty/{id}.md")
+        # pretty md pages location: ../data/playlists_pretty/id.md
+        pretty_path = os.path.join(data_dir,
+                                   f"playlists_pretty/{playlist_id}.md")
 
-        ## Get playlist
-        print(f"Getting the playlist {id} ...")
-        playlist = client.get_playlist(id)
+        # Get playlist
+        print(f"Getting the playlist {playlist_id} ...")
+        playlist = client.get_playlist(playlist_id)
         playlist = playlist.as_dict()
 
-        # remove the share key from dict. It changes constantly and causes not useful diff 
-        playlist.pop('share') 
-        print(f"Playlist found! name: {playlist['title']}, {playlist['nb_tracks']} Tracks")
+        # share link changes constantly and doesn't have useful info
+        playlist.pop('share')
+        print(f"{playlist['title']}, {playlist['nb_tracks']} Tracks")
 
-        ## Saving to destination
+        # Saving to destination
         save_as_json(playlist, json_path)
-        save_as_pretty_table(playlist, pretty_path)       
+        save_as_pretty_table(playlist, pretty_path)
 
 
 def dummy_main():
-    """ In order to prevent real api calls"""
-    
+    """In order to prevent real api calls"""
     # get the catalog:
     data_dir = './data/'
     catalog_path = os.path.join(data_dir, 'test/catalog.txt')
@@ -52,9 +51,10 @@ def dummy_main():
     playlist = get_test_playlist(playlist_ids, data_dir)
 
     # save the template
-    template_path = os.path.join(data_dir, f'playlists_pretty/table_template.md')
-    save_as_pretty_table(playlist, template_path)  
-       
+    template_path = os.path.join(data_dir,
+                                 'playlists_pretty/table_template.md')
+    save_as_pretty_table(playlist, template_path)
+
 
 if __name__ == "__main__":
     dummy_mode = False

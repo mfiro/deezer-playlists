@@ -57,7 +57,7 @@ def dummy_main():
        
 
 if __name__ == "__main__":
-    dummy_mode = True
+    dummy_mode = False
 
     if dummy_mode:
         dummy_main()

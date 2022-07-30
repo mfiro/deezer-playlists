@@ -3,11 +3,11 @@ import json
 from src.pretty_playlist import make_pretty_md
 
 
-def get_catalog(catalog_path):
+def read_catalog(catalog_path):
     """ get the catalog (list of playlists to get) """
     with open(catalog_path, 'r') as f:
-        catalog = f.read().splitlines()
-    return catalog
+        playlist_ids = f.read().splitlines()
+    return playlist_ids
 
 
 def save_as_json(playlist, save_path):

@@ -4,12 +4,13 @@ import os
 from src.helpers import get_test_playlist
 from src.archive import get_catalog, save_as_json, save_as_pretty_table
 
+# TODO: rename get_catalog to read_catalog
 
 def main():
-    current_dir = os.path.dirname(__file__)
+    data_dir = './data'
 
     # get the catalog:
-    catalog_path = os.path.join(current_dir, '../data/catalog/catalog.txt')
+    catalog_path = os.path.join(data_dir, 'catalog/catalog.txt')
     catalog = get_catalog(catalog_path)
 
     # initiate the deezer client
@@ -20,10 +21,10 @@ def main():
         
         ## Destination paths:
         # json files location: ../data/playlists/id.json
-        json_path = os.path.join(current_dir, f"../data/playlists/{id}.json")
+        json_path = os.path.join(data_dir, f"playlists/{id}.json")
 
         # pretty md pages location: ../data/playlists_pretty/id.md 
-        pretty_path = os.path.join(current_dir, f"../data/playlists_pretty/{id}.md")
+        pretty_path = os.path.join(data_dir, f"playlists_pretty/{id}.md")
 
         ## Get playlist
         print(f"Getting the playlist {id} ...")
@@ -43,14 +44,15 @@ def dummy_main():
     """ In order to prevent real api calls"""
     
     # get the catalog:
-    catalog_path = os.path.join(os.path.dirname(__file__), '../data/catalog/catalog.txt')
+    data_dir = './data/'
+    catalog_path = os.path.join(data_dir, 'test/catalog.txt')
     catalog = get_catalog(catalog_path)
 
     # get some dummy data to start with
-    playlist = get_test_playlist(catalog)
+    playlist = get_test_playlist(catalog, data_dir)
 
     # save the template
-    template_path = os.path.join(os.path.dirname(__file__), f'../data/playlists_pretty/table_template.md')
+    template_path = os.path.join(data_dir, f'playlists_pretty/table_template.md')
     save_as_pretty_table(playlist, template_path)  
        
 

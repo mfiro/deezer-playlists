@@ -2,12 +2,12 @@ import json
 import os
 
 
-def get_test_playlist(catalog):
+def get_test_playlist(catalog, data_dir):
     """ In order to prevent real api calls"""
 
     # load json from files
     id = catalog[0]
-    playlist_path = os.path.join(os.path.dirname(__file__), f'../data/playlists/{id}.json')
+    playlist_path = os.path.join(data_dir, f'test/{id}.json')
     with open(playlist_path, 'r') as f:
         playlist = json.load(f)
     

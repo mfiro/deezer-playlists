@@ -1,6 +1,6 @@
 import os
 import json
-from pretty_playlist import make_pretty_md
+from src.pretty_playlist import make_pretty_md
 
 
 def get_catalog(catalog_path):

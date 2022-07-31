@@ -5,7 +5,7 @@ DEEZER is a registered trademark of Deezer. This project is not associated with 
 ## deezer-playlists
 A journal of Deezer's playlists to always have the history available. Updating Daily. Inspired by [spotify-playlist-archive](https://github.com/mackorone/spotify-playlist-archive) and [git-scraping](https://simonwillison.net/2020/Oct/9/git-scraping/).
 
-### How this project work?
+### How this project works?
 This project uses github actions to call deezer's API everyday to get new changes of desired playlists. List of playlists that are monitored are saved in [the catalog file](data/catalog/catalog.txt).
 
 ### In which format data is saved?

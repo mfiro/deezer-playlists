@@ -7,7 +7,7 @@
     "is_loved_track": false,
     "collaborative": false,
     "nb_tracks": 100,
-    "fans": 216553,
+    "fans": 216565,
     "link": "https://www.deezer.com/playlist/935381445",
     "picture": "https://api.deezer.com/playlist/935381445/image",
     "picture_small": "https://e-cdns-images.dzcdn.net/images/playlist/1cf9879ea92d1290c904db741b2f3110/56x56-000000-80-0-0.jpg",
@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/1cf9879ea92d1290c904db741b2f3110/1000x1000-000000-80-0-0.jpg",
     "checksum": "68c8c24bcdb075b56232a90000001d33",
     "tracklist": "https://api.deezer.com/playlist/935381445/tracks",
-    "creation_date": "2014-07-21 09:44:55",
+    "creation_date": "2014-07-21 15:44:55",
     "md5_image": "1cf9879ea92d1290c904db741b2f3110",
     "picture_type": "playlist",
     "creator": {
@@ -101,7 +101,7 @@
         },
         {
             "id": 124237488,
-            "readable": false,
+            "readable": true,
             "title": "CAN'T STOP THE FEELING! (from DreamWorks Animation's \"TROLLS\")",
             "title_short": "CAN'T STOP THE FEELING! (from DreamWorks Animation's \"TROLLS\")",
             "title_version": "",
@@ -137,7 +137,7 @@
         },
         {
             "id": 921009452,
-            "readable": true,
+            "readable": false,
             "title": "Hypnotized",
             "title_short": "Hypnotized",
             "title_version": "",
@@ -424,7 +424,7 @@
         },
         {
             "id": 2162742,
-            "readable": false,
+            "readable": true,
             "title": "Beautiful Day",
             "title_short": "Beautiful Day",
             "title_version": "",
@@ -496,7 +496,7 @@
         },
         {
             "id": 1124841682,
-            "readable": true,
+            "readable": false,
             "title": "Levitating",
             "title_short": "Levitating",
             "title_version": "",
@@ -748,10 +748,10 @@
         },
         {
             "id": 78098991,
-            "readable": false,
-            "title": "Cheerleader (Felix Jaehn Remix)",
+            "readable": true,
+            "title": "Cheerleader (Felix Jaehn Remix) (Radio Edit)",
             "title_short": "Cheerleader (Felix Jaehn Remix)",
-            "title_version": "",
+            "title_version": "(Radio Edit)",
             "link": "https://www.deezer.com/track/78098991",
             "duration": 180,
             "rank": 881780,
@@ -784,7 +784,7 @@
         },
         {
             "id": 1595157041,
-            "readable": false,
+            "readable": true,
             "title": "In The Dark",
             "title_short": "In The Dark",
             "title_version": "",
@@ -892,7 +892,7 @@
         },
         {
             "id": 1705387547,
-            "readable": false,
+            "readable": true,
             "title": "My Pony",
             "title_short": "My Pony",
             "title_version": "",
@@ -964,7 +964,7 @@
         },
         {
             "id": 788708262,
-            "readable": false,
+            "readable": true,
             "title": "Don't Start Now",
             "title_short": "Don't Start Now",
             "title_version": "",
@@ -1000,7 +1000,7 @@
         },
         {
             "id": 63510362,
-            "readable": false,
+            "readable": true,
             "title": "On Top Of The World",
             "title_short": "On Top Of The World",
             "title_version": "",
@@ -1042,7 +1042,7 @@
             "title_version": "",
             "link": "https://www.deezer.com/track/92734438",
             "duration": 269,
-            "rank": 952897,
+            "rank": 921093,
             "explicit_lyrics": true,
             "explicit_content_lyrics": 1,
             "explicit_content_cover": 0,
@@ -1123,7 +1123,7 @@
             "time_add": 1662045948,
             "artist": {
                 "id": 51204222,
-                "name": "The Kid LAROI",
+                "name": "The Kid Laroi",
                 "link": "https://www.deezer.com/artist/51204222",
                 "tracklist": "https://api.deezer.com/artist/51204222/top?limit=50",
                 "type": "artist"
@@ -1432,13 +1432,13 @@
         },
         {
             "id": 1186875192,
-            "readable": true,
+            "readable": false,
             "title": "Faded Love",
             "title_short": "Faded Love",
             "title_version": "",
             "link": "https://www.deezer.com/track/1186875192",
             "duration": 148,
-            "rank": 248010,
+            "rank": 286443,
             "explicit_lyrics": false,
             "explicit_content_lyrics": 0,
             "explicit_content_cover": 2,
@@ -1468,7 +1468,7 @@
         },
         {
             "id": 4619466,
-            "readable": false,
+            "readable": true,
             "title": "I Gotta Feeling",
             "title_short": "I Gotta Feeling",
             "title_version": "",
@@ -1483,7 +1483,7 @@
             "time_add": 1662045948,
             "artist": {
                 "id": 1020109,
-                "name": "The Black Eyed Peas",
+                "name": "Black Eyed Peas",
                 "link": "https://www.deezer.com/artist/1020109",
                 "tracklist": "https://api.deezer.com/artist/1020109/top?limit=50",
                 "type": "artist"
@@ -1684,7 +1684,7 @@
         },
         {
             "id": 12270014,
-            "readable": false,
+            "readable": true,
             "title": "Pocketful of Sunshine",
             "title_short": "Pocketful of Sunshine",
             "title_version": "",
@@ -1900,7 +1900,7 @@
         },
         {
             "id": 131773322,
-            "readable": false,
+            "readable": true,
             "title": "Call on Me (Ryan Riback Remix)",
             "title_short": "Call on Me",
             "title_version": "(Ryan Riback Remix)",
@@ -1936,7 +1936,7 @@
         },
         {
             "id": 419532362,
-            "readable": false,
+            "readable": true,
             "title": "Body",
             "title_short": "Body",
             "title_version": "",
@@ -2044,7 +2044,7 @@
         },
         {
             "id": 1398192442,
-            "readable": false,
+            "readable": true,
             "title": "Zusammen",
             "title_short": "Zusammen",
             "title_version": "",
@@ -2116,7 +2116,7 @@
         },
         {
             "id": 710164352,
-            "readable": true,
+            "readable": false,
             "title": "I Don't Care",
             "title_short": "I Don't Care",
             "title_version": "",
@@ -2188,7 +2188,7 @@
         },
         {
             "id": 3109247,
-            "readable": false,
+            "readable": true,
             "title": "I'm Gonna Be (500 Miles)",
             "title_short": "I'm Gonna Be (500 Miles)",
             "title_version": "",
@@ -2332,7 +2332,7 @@
         },
         {
             "id": 680554,
-            "readable": false,
+            "readable": true,
             "title": "Let's Dance to Joy Division",
             "title_short": "Let's Dance to Joy Division",
             "title_version": "",
@@ -2476,7 +2476,7 @@
         },
         {
             "id": 14405198,
-            "readable": false,
+            "readable": true,
             "title": "Domino",
             "title_short": "Domino",
             "title_version": "",
@@ -2563,7 +2563,7 @@
             "time_add": 1662045948,
             "artist": {
                 "id": 59070642,
-                "name": "Tones And I",
+                "name": "Tones and I",
                 "link": "https://www.deezer.com/artist/59070642",
                 "tracklist": "https://api.deezer.com/artist/59070642/top?limit=50",
                 "type": "artist"
@@ -2620,7 +2620,7 @@
         },
         {
             "id": 657782312,
-            "readable": false,
+            "readable": true,
             "title": "All Around The World (La La La)",
             "title_short": "All Around The World (La La La)",
             "title_version": "",
@@ -2779,7 +2779,7 @@
             "time_add": 1662045948,
             "artist": {
                 "id": 1020109,
-                "name": "The Black Eyed Peas",
+                "name": "Black Eyed Peas",
                 "link": "https://www.deezer.com/artist/1020109",
                 "tracklist": "https://api.deezer.com/artist/1020109/top?limit=50",
                 "type": "artist"
@@ -3088,10 +3088,10 @@
         },
         {
             "id": 770293952,
-            "readable": false,
-            "title": "Roses",
+            "readable": true,
+            "title": "Roses (Imanbek Remix)",
             "title_short": "Roses",
-            "title_version": "",
+            "title_version": "(Imanbek Remix)",
             "link": "https://www.deezer.com/track/770293952",
             "duration": 176,
             "rank": 916292,
@@ -3160,7 +3160,7 @@
         },
         {
             "id": 4945407,
-            "readable": false,
+            "readable": true,
             "title": "I Wanna Dance with Somebody (Who Loves Me)",
             "title_short": "I Wanna Dance with Somebody (Who Loves Me)",
             "title_version": "",
@@ -3196,13 +3196,13 @@
         },
         {
             "id": 134525922,
-            "readable": false,
+            "readable": true,
             "title": "Sofia (A-Class Remix)",
             "title_short": "Sofia",
             "title_version": "(A-Class Remix)",
             "link": "https://www.deezer.com/track/134525922",
             "duration": 259,
-            "rank": 472329,
+            "rank": 436679,
             "explicit_lyrics": false,
             "explicit_content_lyrics": 0,
             "explicit_content_cover": 0,
@@ -3319,7 +3319,7 @@
             "time_add": 1662045948,
             "artist": {
                 "id": 402,
-                "name": "Panic! At The Disco",
+                "name": "Panic! At the Disco",
                 "link": "https://www.deezer.com/artist/402",
                 "tracklist": "https://api.deezer.com/artist/402/top?limit=50",
                 "type": "artist"
@@ -3340,7 +3340,7 @@
         },
         {
             "id": 135372064,
-            "readable": false,
+            "readable": true,
             "title": "Solo Dance",
             "title_short": "Solo Dance",
             "title_version": "",
@@ -3557,9 +3557,9 @@
         {
             "id": 1178599842,
             "readable": true,
-            "title": "Friday (feat. Mufasa & Hypeman)",
+            "title": "Friday (feat. Mufasa & Hypeman) (Dopamine Re-Edit)",
             "title_short": "Friday (feat. Mufasa & Hypeman)",
-            "title_version": "",
+            "title_version": "(Dopamine Re-Edit)",
             "link": "https://www.deezer.com/track/1178599842",
             "duration": 169,
             "rank": 908291,
@@ -3592,7 +3592,7 @@
         },
         {
             "id": 953097,
-            "readable": false,
+            "readable": true,
             "title": "Mr. Brightside",
             "title_short": "Mr. Brightside",
             "title_version": "",

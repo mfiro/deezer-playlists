@@ -7,7 +7,7 @@
     "is_loved_track": false,
     "collaborative": false,
     "nb_tracks": 80,
-    "fans": 5650349,
+    "fans": 5650375,
     "link": "https://www.deezer.com/playlist/65490170",
     "picture": "https://api.deezer.com/playlist/65490170/image",
     "picture_small": "https://e-cdns-images.dzcdn.net/images/playlist/0ab4214b9a60947c104c3f8db6d73995/56x56-000000-80-0-0.jpg",
@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/0ab4214b9a60947c104c3f8db6d73995/1000x1000-000000-80-0-0.jpg",
     "checksum": "3dfbcaeffbcad71f5a29fea96f4a72da",
     "tracklist": "https://api.deezer.com/playlist/65490170/tracks",
-    "creation_date": "2017-05-18 16:38:48",
+    "creation_date": "2017-05-18 10:38:48",
     "md5_image": "0ab4214b9a60947c104c3f8db6d73995",
     "picture_type": "playlist",
     "creator": {
@@ -1151,7 +1151,7 @@
             "title_version": "",
             "link": "https://www.deezer.com/track/1840222807",
             "duration": 179,
-            "rank": 977702,
+            "rank": 802873,
             "explicit_lyrics": false,
             "explicit_content_lyrics": 0,
             "explicit_content_cover": 2,
@@ -1736,7 +1736,7 @@
             "time_add": 1666631062,
             "artist": {
                 "id": 10478743,
-                "name": "Alma",
+                "name": "ALMA",
                 "link": "https://www.deezer.com/artist/10478743",
                 "tracklist": "https://api.deezer.com/artist/10478743/top?limit=50",
                 "type": "artist"
@@ -1757,7 +1757,7 @@
         },
         {
             "id": 1900704657,
-            "readable": true,
+            "readable": false,
             "title": "Until The Sun Comes Up",
             "title_short": "Until The Sun Comes Up",
             "title_version": "",
@@ -1808,7 +1808,7 @@
             "time_add": 1666631062,
             "artist": {
                 "id": 1403694,
-                "name": "Meduza",
+                "name": "MEDUZA",
                 "link": "https://www.deezer.com/artist/1403694",
                 "tracklist": "https://api.deezer.com/artist/1403694/top?limit=50",
                 "type": "artist"
@@ -1952,7 +1952,7 @@
             "time_add": 1666631062,
             "artist": {
                 "id": 1020109,
-                "name": "Black Eyed Peas",
+                "name": "The Black Eyed Peas",
                 "link": "https://www.deezer.com/artist/1020109",
                 "tracklist": "https://api.deezer.com/artist/1020109/top?limit=50",
                 "type": "artist"
@@ -2411,7 +2411,7 @@
             "title_version": "",
             "link": "https://www.deezer.com/track/1880483707",
             "duration": 170,
-            "rank": 618591,
+            "rank": 651105,
             "explicit_lyrics": false,
             "explicit_content_lyrics": 0,
             "explicit_content_cover": 2,
@@ -2708,7 +2708,7 @@
             "time_add": 1666631062,
             "artist": {
                 "id": 4533495,
-                "name": "Gest\u00f6rt Aber GeiL",
+                "name": "Gest\u00f6rt aber GeiL",
                 "link": "https://www.deezer.com/artist/4533495",
                 "tracklist": "https://api.deezer.com/artist/4533495/top?limit=50",
                 "type": "artist"

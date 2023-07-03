@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/376d3824fc273f765f63678ee962444a/1000x1000-000000-80-0-0.jpg",
     "checksum": "b865c6703d6e3caa20550fab7c07d0ac",
     "tracklist": "https://api.deezer.com/playlist/1313617925/tracks",
-    "creation_date": "2015-07-23 05:48:13",
+    "creation_date": "2015-07-23 06:48:13",
     "md5_image": "376d3824fc273f765f63678ee962444a",
     "picture_type": "playlist",
     "creator": {
@@ -1079,7 +1079,7 @@
             "title_version": "",
             "link": "https://www.deezer.com/track/1711726077",
             "duration": 157,
-            "rank": 795021,
+            "rank": 752753,
             "explicit_lyrics": true,
             "explicit_content_lyrics": 1,
             "explicit_content_cover": 0,
@@ -1479,7 +1479,7 @@
             "explicit_lyrics": true,
             "explicit_content_lyrics": 1,
             "explicit_content_cover": 2,
-            "preview": "https://cdns-preview-3.dzcdn.net/stream/c-394696beb07ac98dfa3ecc578a8f87dc-2.mp3",
+            "preview": "https://cdns-preview-3.dzcdn.net/stream/c-394696beb07ac98dfa3ecc578a8f87dc-3.mp3",
             "md5_image": "7b49d51e89ff07824c8c62043775a2ab",
             "time_add": 1688190369,
             "artist": {
@@ -1767,7 +1767,7 @@
             "explicit_lyrics": true,
             "explicit_content_lyrics": 1,
             "explicit_content_cover": 2,
-            "preview": "https://cdns-preview-c.dzcdn.net/stream/c-c4640e8425da58f4d5a59275b30cec07-2.mp3",
+            "preview": "https://cdns-preview-c.dzcdn.net/stream/c-c4640e8425da58f4d5a59275b30cec07-3.mp3",
             "md5_image": "7b49d51e89ff07824c8c62043775a2ab",
             "time_add": 1688190369,
             "artist": {
@@ -1907,7 +1907,7 @@
             "title_version": "",
             "link": "https://www.deezer.com/track/1378342592",
             "duration": 242,
-            "rank": 854656,
+            "rank": 892361,
             "explicit_lyrics": true,
             "explicit_content_lyrics": 1,
             "explicit_content_cover": 1,
@@ -2739,7 +2739,7 @@
             "explicit_lyrics": true,
             "explicit_content_lyrics": 1,
             "explicit_content_cover": 2,
-            "preview": "https://cdns-preview-0.dzcdn.net/stream/c-0a25a70cd9e16c1c5c00093adece8793-2.mp3",
+            "preview": "https://cdns-preview-0.dzcdn.net/stream/c-0a25a70cd9e16c1c5c00093adece8793-3.mp3",
             "md5_image": "7b49d51e89ff07824c8c62043775a2ab",
             "time_add": 1688190369,
             "artist": {
@@ -3567,7 +3567,7 @@
             "explicit_lyrics": true,
             "explicit_content_lyrics": 1,
             "explicit_content_cover": 2,
-            "preview": "https://cdns-preview-5.dzcdn.net/stream/c-56bafeac27eaa56f286265c725cab15c-2.mp3",
+            "preview": "https://cdns-preview-5.dzcdn.net/stream/c-56bafeac27eaa56f286265c725cab15c-3.mp3",
             "md5_image": "7b49d51e89ff07824c8c62043775a2ab",
             "time_add": 1688190369,
             "artist": {

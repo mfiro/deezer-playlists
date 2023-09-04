@@ -7,7 +7,7 @@
     "is_loved_track": false,
     "collaborative": false,
     "nb_tracks": 100,
-    "fans": 218919,
+    "fans": 218925,
     "link": "https://www.deezer.com/playlist/935381445",
     "picture": "https://api.deezer.com/playlist/935381445/image",
     "picture_small": "https://e-cdns-images.dzcdn.net/images/playlist/abce02b0ffa7bd22cfa6b59de4dfc135/56x56-000000-80-0-0.jpg",
@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/abce02b0ffa7bd22cfa6b59de4dfc135/1000x1000-000000-80-0-0.jpg",
     "checksum": "5c549a258e2bdb78b30fd18f74ef9266",
     "tracklist": "https://api.deezer.com/playlist/935381445/tracks",
-    "creation_date": "2014-07-21 08:44:55",
+    "creation_date": "2014-07-21 06:44:55",
     "md5_image": "abce02b0ffa7bd22cfa6b59de4dfc135",
     "picture_type": "playlist",
     "creator": {
@@ -1412,7 +1412,7 @@
             "time_add": 1691507651,
             "artist": {
                 "id": 249599,
-                "name": "Jason Derulo",
+                "name": "Jason Der\u00fclo",
                 "link": "https://www.deezer.com/artist/249599",
                 "tracklist": "https://api.deezer.com/artist/249599/top?limit=50",
                 "type": "artist"

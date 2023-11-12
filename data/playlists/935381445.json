@@ -7,7 +7,7 @@
     "is_loved_track": false,
     "collaborative": false,
     "nb_tracks": 100,
-    "fans": 219429,
+    "fans": 219437,
     "link": "https://www.deezer.com/playlist/935381445",
     "picture": "https://api.deezer.com/playlist/935381445/image",
     "picture_small": "https://e-cdns-images.dzcdn.net/images/playlist/52c65a9a57dfb8a698f1ae3a34d5aecc/56x56-000000-80-0-0.jpg",
@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/52c65a9a57dfb8a698f1ae3a34d5aecc/1000x1000-000000-80-0-0.jpg",
     "checksum": "30d29fa892c3d88a17aaff8377c1efe0",
     "tracklist": "https://api.deezer.com/playlist/935381445/tracks",
-    "creation_date": "2014-07-21 08:44:55",
+    "creation_date": "2014-07-21 09:44:55",
     "md5_image": "52c65a9a57dfb8a698f1ae3a34d5aecc",
     "picture_type": "playlist",
     "creator": {
@@ -1700,7 +1700,7 @@
             "time_add": 1697811962,
             "artist": {
                 "id": 249599,
-                "name": "Jason Der\u00fclo",
+                "name": "Jason Derulo",
                 "link": "https://www.deezer.com/artist/249599",
                 "tracklist": "https://api.deezer.com/artist/249599/top?limit=50",
                 "type": "artist"
@@ -1727,7 +1727,7 @@
             "title_version": "",
             "link": "https://www.deezer.com/track/1950009907",
             "duration": 186,
-            "rank": 749436,
+            "rank": 784917,
             "explicit_lyrics": false,
             "explicit_content_lyrics": 0,
             "explicit_content_cover": 2,

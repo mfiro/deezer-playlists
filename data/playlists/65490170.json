@@ -7,7 +7,7 @@
     "is_loved_track": false,
     "collaborative": false,
     "nb_tracks": 110,
-    "fans": 5655959,
+    "fans": 5655954,
     "link": "https://www.deezer.com/playlist/65490170",
     "picture": "https://api.deezer.com/playlist/65490170/image",
     "picture_small": "https://e-cdns-images.dzcdn.net/images/playlist/41cfc1610f43d77088ca3ce76b96f189/56x56-000000-80-0-0.jpg",
@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/41cfc1610f43d77088ca3ce76b96f189/1000x1000-000000-80-0-0.jpg",
     "checksum": "74d541fa232f90151c67e7847f6aeb62",
     "tracklist": "https://api.deezer.com/playlist/65490170/tracks",
-    "creation_date": "2017-05-18 07:38:48",
+    "creation_date": "2017-05-18 10:38:48",
     "md5_image": "41cfc1610f43d77088ca3ce76b96f189",
     "picture_type": "playlist",
     "creator": {

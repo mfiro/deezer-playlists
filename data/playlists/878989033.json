@@ -7,7 +7,7 @@
     "is_loved_track": false,
     "collaborative": false,
     "nb_tracks": 50,
-    "fans": 210873,
+    "fans": 210884,
     "link": "https://www.deezer.com/playlist/878989033",
     "picture": "https://api.deezer.com/playlist/878989033/image",
     "picture_small": "https://e-cdns-images.dzcdn.net/images/playlist/b67355e1495178f61185473d93052770/56x56-000000-80-0-0.jpg",
@@ -16,7 +16,7 @@
     "picture_xl": "https://e-cdns-images.dzcdn.net/images/playlist/b67355e1495178f61185473d93052770/1000x1000-000000-80-0-0.jpg",
     "checksum": "cb17061fb07aca43ab920346cbf82ba6",
     "tracklist": "https://api.deezer.com/playlist/878989033/tracks",
-    "creation_date": "2014-05-26 05:53:21",
+    "creation_date": "2014-05-26 08:53:21",
     "md5_image": "b67355e1495178f61185473d93052770",
     "picture_type": "playlist",
     "creator": {
@@ -831,7 +831,7 @@
             "explicit_lyrics": false,
             "explicit_content_lyrics": 3,
             "explicit_content_cover": 2,
-            "preview": "https://cdns-preview-7.dzcdn.net/stream/c-7ff725239b07324d9a7958716a07b481-6.mp3",
+            "preview": "https://cdns-preview-c.dzcdn.net/stream/c-c41602819d3cea0f916eaee57d2f3f65-1.mp3",
             "md5_image": "cbc404543f45cf93465906b61ec85687",
             "time_add": 1668533151,
             "artist": {
